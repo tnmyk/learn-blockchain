@@ -2,10 +2,19 @@ import styles from "./Nav.module.css";
 import Link from "next/link";
 const Nav = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Link href="/">
-        <a> Learn Blockchain </a>
+        <a className={styles.logo}> Learn Blockchain </a>
       </Link>
+
+      <div className={styles.linksContainer}>
+        <Link href="/">
+          <a> Play now </a>
+        </Link>
+        <Link href="/">
+          <button className="buttonMain"> Sign Up </button>
+        </Link>
+      </div>
     </div>
   );
 };
