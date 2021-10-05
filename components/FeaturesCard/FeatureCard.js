@@ -1,12 +1,11 @@
 import styles from "./FeatureCard.module.css";
-const FeatureCard = () => {
+const FeatureCard = ({title,description}) => {
   return (
     <div className={styles.card}>
       <div className={styles.cardContent}>
-        <h1 className={styles.heading}>Heading</h1>
+        <h1 className={styles.heading}>{title}</h1>
         <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          {description}
         </p>
       </div>
     </div>

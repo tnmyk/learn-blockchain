@@ -16,3 +16,7 @@
     flex-direction: column;
     row-gap: 0.7rem;
 }
+
+.linksContainer a{
+    font-size: 1.02rem;
+}

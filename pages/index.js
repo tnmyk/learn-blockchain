@@ -2,6 +2,7 @@ import FeatureCard from "../components/FeaturesCard/FeatureCard";
 import styles from "../styles/Home.module.css";
 import { AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
+import featuresData from "../components/FeaturesCard/FeaturesData";
 
 const Home = () => {
   return (
@@ -77,10 +78,15 @@ const Home = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div className={styles.cardsContainer}>
-          <FeatureCard />
-          <FeatureCard />
-          <FeatureCard />
-          <FeatureCard />
+          {featuresData.map((feature, index) => {
+            return (
+              <FeatureCard
+                key={index}
+                title={feature.title}
+                description={feature.description}
+              />
+            );
+          })}
         </div>
       </div>
       <div className={styles.page}>
@@ -92,7 +98,7 @@ const Home = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <button className={`buttonMain ${styles.center} ${styles.githubLink}`}>
-          View Sourcecode On Github{" "}
+          <Link href="/">View Sourcecode On Github</Link>
           <AiFillGithub className={styles.githubIcon} />
         </button>
         <br />
@@ -123,10 +129,18 @@ const Home = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div className={styles.center}>
-          <div className={styles.moreDetailsBtn}>Resources</div>
-          <div className={styles.moreDetailsBtn}>Techstack Used</div>
-          <div className={styles.moreDetailsBtn}>Techstack Used</div>
-          <div className={styles.moreDetailsBtn}>More about Project</div>
+          <Link href="/">
+            <div className={styles.moreDetailsBtn}>Resources</div>
+          </Link>
+          <Link href="/">
+            <div className={styles.moreDetailsBtn}>Techstack Used</div>
+          </Link>
+          <Link href="/">
+            <div className={styles.moreDetailsBtn}>Techstack Used</div>
+          </Link>
+          <Link href="/">
+            <div className={styles.moreDetailsBtn}>More about Project</div>
+          </Link>
         </div>
       </div>
     </div>
