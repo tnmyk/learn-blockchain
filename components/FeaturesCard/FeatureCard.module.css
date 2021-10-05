@@ -1,0 +1,24 @@
+.card {
+  width: 29rem;
+  height: 18.5rem;
+  border-radius: 7px;
+  background-color: #fffffe;
+}
+.cardContent {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.heading {
+  margin: 0 auto;
+  margin-bottom: 1.8rem;
+
+  width: 70%;
+}
+.description {
+  font-size: 1.3rem;
+  width: 75%;
+  margin: 0 auto;
+}

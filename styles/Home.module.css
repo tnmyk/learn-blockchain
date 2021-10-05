@@ -1,0 +1,150 @@
+/* :root {
+  --bg-color: #faeee7;
+  --heading-color: #33272a;
+  --paragraph-color: #594a4e;
+  --btn-bg-color: #ff8ba7;
+  --btn-text-color: #33272a;
+  --stroke: #33272a;
+  --white-bg: #fffffe;
+} */
+.center {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+.home {
+  width: 85%;
+  margin: 0 auto;
+}
+.intro {
+  display: flex;
+  width: 100%;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+}
+.introText {
+  padding-top: 2rem;
+  width: 60%;
+}
+.introHeading {
+  font-size: 3.5rem;
+}
+.introSubHeading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.introBtns {
+  display: flex;
+  column-gap: 2rem;
+}
+.introBtns button {
+  font-size: 1.35rem;
+}
+.introImageContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.introImage {
+  width: 80%;
+}
+.learnMore {
+  width: max-content;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+.page {
+  min-height: 100vh;
+  padding-top: 6rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+.headingCenter {
+  width: max-content;
+  margin: 0 auto;
+}
+.sub {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  width: 85%;
+}
+.subCenter {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1.4rem;
+  margin-bottom: 5.5rem;
+}
+.previewFlex {
+  margin-top: 5rem;
+  display: flex;
+  width: 90%;
+}
+.previewImageContainer {
+  height: 2rem; /* TODO: Change*/
+  width: 50%;
+}
+.previewTextContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.previewTextContainer button {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+.previewText {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: right;
+  width: 93%;
+}
+
+.cardsContainer {
+  display: flex;
+  column-gap: 3rem;
+  row-gap: 4rem;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.githubLink {
+  font-size: 1.25rem;
+}
+.githubIcon {
+  font-size: 1.5rem;
+  vertical-align: -4px;
+}
+.contributeContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.contribute {
+  height: 4rem;
+  width: 21rem;
+  border-radius: 8px;
+  border: 2px solid var(--stroke);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.moreDetailsBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--stroke);
+  width: 18rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  margin-bottom: 0.5rem;
+}

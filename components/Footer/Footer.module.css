@@ -1,0 +1,18 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    height: 14rem;
+    margin-top: 8rem;
+    border-top: 1px solid #8F797F ;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    padding-top: 3rem;
+}   
+.linksContainer{
+    margin-top: 1rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+}
