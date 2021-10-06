@@ -1,0 +1,40 @@
+.blockContainer {
+  width: max-content;
+}
+.blockNumber {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+.block {
+  width: 32rem;
+  height: 12rem;
+  border-radius: 10px;
+  border: 2px solid var(--stroke);
+  background-color: var(--white-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.infoContainer {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+  font-size: 0.85rem;
+}
+.infoContainer * {
+  font-style: normal;
+}
+
+.hashContainer {
+  border-top: 2px solid var(--stroke);
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  word-break: break-all;
+}

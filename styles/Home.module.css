@@ -7,11 +7,7 @@
   --stroke: #33272a;
   --white-bg: #fffffe;
 } */
-.center {
-  display: block;
-  width: max-content;
-  margin: 0 auto;
-}
+
 .home {
   width: 85%;
   margin: 0 auto;
@@ -82,7 +78,7 @@
 .previewFlex {
   margin-top: 5rem;
   display: flex;
-  width: 90%;
+  width: 95%;
 }
 .previewImageContainer {
   height: 2rem; /* TODO: Change*/

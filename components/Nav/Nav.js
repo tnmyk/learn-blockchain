@@ -8,7 +8,7 @@ const Nav = () => {
       </Link>
 
       <div className={styles.linksContainer}>
-        <Link href="/">
+        <Link href="/demo">
           <a> Play now </a>
         </Link>
         <Link href="/">

@@ -97,7 +97,7 @@ const Home = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <button className={`buttonMain ${styles.center} ${styles.githubLink}`}>
+        <button className={`buttonMain center ${styles.githubLink}`}>
           <Link href="/">View Sourcecode On Github</Link>
           <AiFillGithub className={styles.githubIcon} />
         </button>
@@ -105,7 +105,7 @@ const Home = () => {
         <br />
         <br />
         <br />
-        <span className={styles.center} style={{ fontSize: "1.1rem" }}>
+        <span className="center" style={{ fontSize: "1.1rem" }}>
           Support the Project by:
         </span>
         <div className={styles.contributeContainer}>
@@ -128,7 +128,7 @@ const Home = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <div className={styles.center}>
+        <div className="center">
           <Link href="/">
             <div className={styles.moreDetailsBtn}>Resources</div>
           </Link>
