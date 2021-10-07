@@ -2,7 +2,20 @@
   display: flex;
   width: 90%;
   margin: 0 auto;
+  height: 83vh;
 }
 .info {
   width: 50%;
+  height: 100%;
+  overflow: auto;
+  padding: 0 2rem;
+}
+.info::-webkit-scrollbar{
+  width: 0.15rem;
+  background-color: none;
+}
+
+.info::-webkit-scrollbar-thumb{
+  background-color: var(--stroke);
+  height: 1rem;
 }

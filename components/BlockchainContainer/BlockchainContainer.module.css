@@ -1,5 +1,17 @@
 .blockchainContainer {
   width: 50%;
+  height: 100%;
+  overflow: auto;
+}
+
+.blockchainContainer::-webkit-scrollbar{
+  width: 0.15rem;
+  background-color: none;
+}
+
+.blockchainContainer::-webkit-scrollbar-thumb{
+  background-color: var(--stroke);
+  height: 1rem;
 }
 .blockchain {
   display: flex;
@@ -24,15 +36,16 @@
 
 .inputContainer {
   background-color: var(--white-bg);
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 3rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 2rem 2rem;
   border-radius: 10px;
-  row-gap: 0.7rem;
+  row-gap: 0.6rem;
   border: 1px solid var(--stroke);
 }
 .inputContainer input {
