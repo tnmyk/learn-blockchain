@@ -11,7 +11,7 @@ const Nav = () => {
         <Link href="/demo">
           <a> Play now </a>
         </Link>
-        <Link href="/">
+        <Link href="/signin">
           <button className="buttonMain"> Sign Up </button>
         </Link>
       </div>
