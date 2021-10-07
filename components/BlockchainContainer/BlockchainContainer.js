@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import Block from "../Block/Block";
 import styles from "./BlockchainContainer.module.css";
-const BlockchainContainer = () => {
+const BlockchainContainer = ({setNewTopic}) => {
+
+
   const [blockchain, setBlockchain] = useState([]);
   useEffect(() => {
     setBlockchain([
@@ -12,16 +14,23 @@ const BlockchainContainer = () => {
         hash: "",
       },
     ]);
+
+    document.addEventListener('click',(e)=>{
+      const topic = e.target.dataset.topic;
+      if(topic)
+      setNewTopic(topic)
+    })
   }, []);
   const [inputData, setInputData] = useState("");
   const handleAddBlock = () => {
     if (!inputData) return null;
+    const newPrevHash = blockchain[blockchain.length - 1].hash;
     setBlockchain([
       ...blockchain,
       {
         data: inputData,
         timestamp: new Date().getTime(),
-        previousHash: blockchain[blockchain.length - 1].hash,
+        previousHash: newPrevHash,
       },
     ]);
     setInputData("");

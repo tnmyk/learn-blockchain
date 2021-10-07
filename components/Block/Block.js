@@ -15,20 +15,23 @@ const Block = ({
     let tempArr = blockchain;
     tempArr[index].hash = hash;
     setBlockchain(tempArr);
-    console.log("s");
-  }, [setHash]);
+  }, [hash]);
   const handleDataChange = (e) => {
     const { value } = e.target;
-    setHash(mineBlock(value, timestamp, previousHash));
+    setHash(mineBlock(value, new Date().getTime(), previousHash));
   };
   return (
-    <div className={styles.block}>
+    <div className={styles.block} data-topic="Block">
       <p className={`center ${styles.blockNumber}`}>
-        {index ? `Block #${index}` : "Genesis Block"}
+        {index ? (
+          `Block #${index}`
+        ) : (
+          <span data-topic="Genesis Block">Genesis Block</span>
+        )}
       </p>
       <div className={styles.infoContainer}>
         <div className={styles.info}>
-          <span> Data:</span>
+          <span data-topic="Block Data"> Data:</span>
           <input
             type="text"
             defaultValue={data}
@@ -37,13 +40,15 @@ const Block = ({
           />
         </div>
         <div>
-          <div> Timestamp: {timestamp}</div>
+          <div data-topic="Block Timestamp"> Timestamp: {timestamp}</div>
         </div>
         <div>
-          <div> Previous Hash: {previousHash}</div>
+          <div data-topic="Previous Hash"> Previous Hash: {previousHash}</div>
         </div>
       </div>
-      <div className={styles.hashContainer}>Hash: {hash}</div>
+      <div className={styles.hashContainer} data-topic="Hash">
+        Hash: {hash}
+      </div>
     </div>
   );
 };
