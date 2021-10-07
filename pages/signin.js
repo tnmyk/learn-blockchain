@@ -3,7 +3,7 @@ import SawoLogin from "sawo-react";
 import { useState } from "react";
 import styles from "../styles/SignIn.module.css";
 import Footer from "../components/Footer/Footer";
-const signin = () => {
+const Signin = () => {
   const [userPayload, setUserPayload] = useState({});
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -26,4 +26,4 @@ const signin = () => {
   );
 };
 
-export default signin;
+export default Signin;
