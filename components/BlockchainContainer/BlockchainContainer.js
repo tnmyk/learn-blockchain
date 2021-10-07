@@ -38,6 +38,7 @@ const BlockchainContainer = () => {
             return (
               <Block
                 data={data}
+                key={index}
                 timestamp={timestamp}
                 previousHash={previousHash}
                 index={index}
@@ -47,8 +48,8 @@ const BlockchainContainer = () => {
             );
           else {
             return (
-              <>
-                <span className={styles.link} />
+              <div key={index}>
+                <div className={styles.link} />
                 <Block
                   data={data}
                   timestamp={timestamp}
@@ -57,7 +58,7 @@ const BlockchainContainer = () => {
                   blockchain={blockchain}
                   setBlockchain={setBlockchain}
                 />
-              </>
+              </div>
             );
           }
         })}
