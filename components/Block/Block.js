@@ -15,7 +15,7 @@ const Block = ({
     let tempArr = blockchain;
     tempArr[index].hash = hash;
     setBlockchain(tempArr);
-    console.log('s')
+    console.log("s");
   }, [setHash]);
   const handleDataChange = (e) => {
     const { value } = e.target;

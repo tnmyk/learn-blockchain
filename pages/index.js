@@ -2,7 +2,7 @@ import FeatureCard from "../components/FeaturesCard/FeatureCard";
 import styles from "../styles/Home.module.css";
 import { AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
-import featuresData from "../components/FeaturesCard/FeaturesData";
+import featuresData from "../components/FeaturesCard/featuresData";
 
 const Home = () => {
   return (
