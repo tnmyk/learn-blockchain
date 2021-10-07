@@ -1,13 +1,18 @@
-import Block from '../components/Block/Block';
-import styles from '../styles/Demo.module.css'
+import Block from "../components/Block/Block";
+import BlockchainContainer from "../components/BlockchainContainer/BlockchainContainer";
+import styles from "../styles/Demo.module.css";
 
 const Demo = () => {
-    return ( <>
-        <h2 className='center'>Local Blockchain Demonstration</h2>
-        <div className={styles.blockchain}>
-            <Block/>
-        </div>
-    </> );
-}
- 
+  return (
+    <div className={styles.page}>
+      <div className={styles.info}>
+
+      </div>
+
+        <BlockchainContainer />
+   
+    </div>
+  );
+};
+
 export default Demo;

@@ -1,0 +1,50 @@
+.blockchainContainer {
+  width: 50%;
+}
+.blockchain {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: max-content;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+.link {
+  height: 2rem;
+  width: 1rem;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    var(--stroke) 33%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: right;
+  background-size: 2px 7px;
+  background-repeat: repeat-y;
+}
+
+.inputContainer {
+  background-color: var(--white-bg);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  row-gap: 0.7rem;
+  border: 1px solid var(--stroke);
+}
+.inputContainer input {
+  font-size: 1.1rem;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border: 1px solid var(--stroke);
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 0.3rem;
+}
+.inputContainer button{
+  
+}

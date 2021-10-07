@@ -1,9 +1,6 @@
-.blockContainer {
-  width: max-content;
-}
 .blockNumber {
-  font-size: 1.2rem;
-  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  margin-top: 0.3rem;
 }
 .block {
   width: 32rem;
@@ -28,7 +25,10 @@
 .infoContainer * {
   font-style: normal;
 }
-
+.info {
+  display: flex;
+  align-items: center;
+}
 .hashContainer {
   border-top: 2px solid var(--stroke);
   height: 2.2rem;
@@ -37,4 +37,15 @@
   padding: 0.8rem;
   font-size: 0.8rem;
   word-break: break-all;
+}
+
+.input {
+  outline: none;
+  border: none;
+  border: 1px solid var(--stroke);
+  padding: 0.2rem;
+  font-size: 0.85rem;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+  width: 100%;
 }
