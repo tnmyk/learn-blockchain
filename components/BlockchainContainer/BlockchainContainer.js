@@ -1,15 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Block from "../Block/Block";
 import styles from "./BlockchainContainer.module.css";
 const BlockchainContainer = () => {
-  const [blockchain, setBlockchain] = useState([
-    {
-      data: "Genesis Block",
-      timestamp: new Date().getTime(),
-      previousHash: "0",
-      hash: "",
-    },
-  ]);
+  const [blockchain, setBlockchain] = useState([]);
+  useEffect(() => {
+    setBlockchain([
+      {
+        data: "Genesis Block",
+        timestamp: new Date().getTime(),
+        previousHash: "0",
+        hash: "",
+      },
+    ]);
+  }, []);
   const [inputData, setInputData] = useState("");
   const handleAddBlock = () => {
     if (!inputData) return null;
