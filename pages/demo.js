@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
-import Block from "../components/Block/Block";
+import { useState } from "react";
 import BlockchainContainer from "../components/BlockchainContainer/BlockchainContainer";
 import Information from "../components/Information/Information";
 import infoArr from "../data/info";
 import styles from "../styles/Demo.module.css";
-
+import Head from "next/head";
 const Demo = () => {
   const [currentTopic, setCurrentTopic] = useState(infoArr[0]);
   const setNewTopic = (topic) => {
@@ -15,6 +14,9 @@ const Demo = () => {
   };
   return (
     <div className={styles.page}>
+      <Head>
+        <title>Blockchain Demonstration</title>
+      </Head>
       <div className={styles.info}>
         <Information
           title={currentTopic.title}

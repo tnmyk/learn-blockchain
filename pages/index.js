@@ -4,9 +4,13 @@ import { AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
 import featuresData from "../components/FeaturesCard/featuresData";
 import Footer from "../components/Footer/Footer";
+import Head from "next/head";
 const Home = () => {
   return (
     <>
+      <Head>
+        <title>Learn Blockchain</title>
+      </Head>
       <div className={styles.home}>
         <div className={styles.intro}>
           <div className={styles.introText}>
