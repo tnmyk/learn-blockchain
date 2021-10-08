@@ -5,6 +5,7 @@ import styles from "../styles/SignIn.module.css";
 import Footer from "../components/Footer/Footer";
 import { useAuth } from "../context/AuthContext";
 import Link from "next/link";
+import addBlockToCloud from "../addBlockToCloud";
 
 const Signin = () => {
   const { isLoggedIn, signIn } = useAuth();
@@ -17,6 +18,7 @@ const Signin = () => {
   };
   async function sawoLoginCallback(payload) {
     //  payload.user_id
+    await addBlockToCloud(payload.user_id,payload.customFieldInputValues.Name);
     signIn(payload);
   }
   return (

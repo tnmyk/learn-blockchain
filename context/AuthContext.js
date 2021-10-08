@@ -9,6 +9,7 @@ export const AuthProvider = ({ children }) => {
   const [userPayload, setUserPayload] = useState({});
   const [username, setUsername] = useState("");
   useEffect(() => {
+    // addBlockToCloud('asdsadasdasdasd','tam,a')
     const uid = localStorage.getItem("uid");
     if (uid) setIsLoggedIn(true);
     const uname = localStorage.getItem("username");
