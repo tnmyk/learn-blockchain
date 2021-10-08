@@ -41,7 +41,9 @@ const Home = () => {
             Morbi tristique senectus et netus et malesuada fames ac turpis.
           </p>
           <div className={styles.previewFlex}>
-            <div className={styles.previewImageContainer}></div>
+            <div className={styles.previewImageContainer}>
+              <img src="images/preview1.png" width={"100%"} />
+            </div>
             <div className={styles.previewTextContainer}>
               <h2 className={styles.previewText}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -62,7 +64,9 @@ const Home = () => {
             Morbi tristique senectus et netus et malesuada fames ac turpis.
           </p>
           <div className={styles.previewFlex}>
-            <div className={styles.previewImageContainer}></div>
+            <div className={styles.previewImageContainer}>
+              <img src="images/preview2.png" width={"90%"} />
+            </div>
             <div className={styles.previewTextContainer}>
               <h2 className={styles.previewText}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

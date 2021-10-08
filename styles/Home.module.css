@@ -81,8 +81,9 @@
   width: 95%;
 }
 .previewImageContainer {
-  height: 2rem; /* TODO: Change*/
-  width: 50%;
+  width: 60%;
+  overflow: hidden;
+  border-radius: 15px;
 }
 .previewTextContainer {
   width: 50%;
