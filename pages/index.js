@@ -23,8 +23,12 @@ const Home = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className={styles.introBtns}>
-              <button className="buttonMain">Play Demonstration</button>
-              <button className="buttonMain">Learn Now</button>
+              <Link href="/demo">
+                <button className="buttonMain">Play Demonstration</button>
+              </Link>
+              <a target="_blank" href="/api/blockchain">
+                <button className="buttonMain">See Blockchain API </button>
+              </a>
             </div>
           </div>
           <div className={styles.introImageContainer}>
@@ -49,7 +53,9 @@ const Home = () => {
                 Blockchain API of users connected with hashes made by SHA256
                 encryption Standard with difficulty 2.
               </h2>
-              <button className="buttonMain">Start Live Demo</button>
+              <a target="_blank" href="/api/blockchain">
+                <button className="buttonMain">See blockchain API</button>
+              </a>
             </div>
           </div>
         </div>
@@ -74,7 +80,9 @@ const Home = () => {
                 The information will be automatically rendered on the left
                 section of the demo page.
               </h2>
-              <button className="buttonMain">Start Learning</button>
+              <Link href="/demo">
+                <button className="buttonMain">Start Learning</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -131,13 +139,12 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className={styles.page}>
+        <div className={styles.page} style={{ minHeight: "75vh" }}>
           <h1 className={`${styles.heading} ${styles.headingCenter}`}>
             More details
           </h1>
           <p className={`${styles.sub} ${styles.subCenter}`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Check out more details about this project.
           </p>
           <div className="center">
             {/* <Link href="/">
