@@ -25,7 +25,7 @@ const Home = () => {
               <Link href="/demo">
                 <button className="buttonMain">Play Demonstration</button>
               </Link>
-              <a  href="/api/blockchain">
+              <a target="_blank" href="/api/blockchain">
                 <button className="buttonMain">See Blockchain API </button>
               </a>
             </div>

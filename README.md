@@ -15,3 +15,4 @@
 - Firebase
 etc
 
+Concept: Beginners can learn about how the blockchain works and more details.
