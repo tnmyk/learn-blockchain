@@ -10,7 +10,7 @@ const Nav = () => {
       </Link>
       <div className={styles.linksContainer}>
         <Link href="/api/blockchain">
-          <a target="_blank">Blockchain Api</a>
+          <a target="_blank">Blockchain API</a>
         </Link>
         <Link href="/demo">
           <a> Local Demonstration </a>
