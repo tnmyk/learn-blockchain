@@ -1,6 +1,19 @@
+.page{
+    min-height: 60vh;
+}
+
 .formContainer{
     height: 22rem;
     width: 30rem;
     margin: 0 auto;
     margin-top: 4rem;
+}
+.loggedIn{
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 9rem;
+}
+.continue{
+    margin-top: 2rem;
+    font-size: 1.1rem;
 }

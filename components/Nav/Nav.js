@@ -1,6 +1,8 @@
 import styles from "./Nav.module.css";
 import Link from "next/link";
+import { useAuth } from "../../context/AuthContext";
 const Nav = () => {
+  const { isLoggedIn } = useAuth();
   return (
     <div className={styles.container}>
       <Link href="/">
@@ -11,9 +13,11 @@ const Nav = () => {
         <Link href="/demo">
           <a> Play now </a>
         </Link>
-        <Link href="/signin">
-          <button className="buttonMain"> Sign Up </button>
-        </Link>
+        { (
+          <Link href="/signin">
+            <button className="buttonMain"> Sign Up </button>
+          </Link>
+        )}
       </div>
     </div>
   );
