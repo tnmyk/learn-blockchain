@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-
+import addBlockToCloud from "../addBlockToCloud";
 const AuthContext = createContext();
 export const useAuth = () => {
   return useContext(AuthContext);
@@ -21,6 +21,6 @@ export const AuthProvider = ({ children }) => {
     setIsLoggedIn(true);
     setUsername(uname);
   };
-  const data = { signIn, isLoggedIn ,username};
+  const data = { signIn, isLoggedIn, username };
   return <AuthContext.Provider value={data}>{children}</AuthContext.Provider>;
 };

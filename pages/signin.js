@@ -5,6 +5,7 @@ import styles from "../styles/SignIn.module.css";
 import Footer from "../components/Footer/Footer";
 import { useAuth } from "../context/AuthContext";
 import Link from "next/link";
+
 const Signin = () => {
   const { isLoggedIn, signIn } = useAuth();
   const show = isLoggedIn;
@@ -14,8 +15,8 @@ const Signin = () => {
     apiKey: process.env.NEXT_PUBLIC_SAWO_API_KEY, // required, get it from sawo dev.sawolabs.com,
     containerHeight: "100%", // the login container height, default is 230px
   };
-  function sawoLoginCallback(payload) {
-    console.log(payload);
+  async function sawoLoginCallback(payload) {
+    //  payload.user_id
     signIn(payload);
   }
   return (
