@@ -9,9 +9,9 @@ const Nav = () => {
         <a className={styles.logo}> Learn Blockchain </a>
       </Link>
       <div className={styles.linksContainer}>
-        <a target="_blank" href="/api/blockchain">
-          Blockchain Api
-        </a>
+        <Link href="/api/blockchain">
+          <a target="_blank">Blockchain Api</a>
+        </Link>
         <Link href="/demo">
           <a> Local Demonstration </a>
         </Link>
