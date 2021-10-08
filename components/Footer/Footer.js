@@ -11,7 +11,11 @@ const Footer = () => {
           <a>About Project</a>
         </Link>
 
-        <a href="https://github.com/tnmyk/learn-blockchain" target="_blank">
+        <a
+          rel="noreferrer"
+          href="https://github.com/tnmyk/learn-blockchain"
+          target="_blank"
+        >
           Github
           <AiFillGithub style={{ verticalAlign: "-2px", fontSize: "1.1rem" }} />
         </a>

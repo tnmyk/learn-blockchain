@@ -25,7 +25,7 @@ const Home = () => {
               <Link href="/demo">
                 <button className="buttonMain">Play Demonstration</button>
               </Link>
-              <a target="_blank" href="/api/blockchain">
+              <a target="_blank" rel="noreferrer" href="/api/blockchain">
                 <button className="buttonMain">See Blockchain API </button>
               </a>
             </div>
@@ -52,7 +52,7 @@ const Home = () => {
                 Blockchain API of users connected with hashes made by SHA256
                 encryption Standard with difficulty 2.
               </h2>
-              <a target="_blank" href="/api/blockchain">
+              <a target="_blank" rel="noreferrer" href="/api/blockchain">
                 <button className="buttonMain">See blockchain API</button>
               </a>
             </div>
@@ -112,7 +112,11 @@ const Home = () => {
             This project is Open-sourced and warmly welcomes contribution.
           </p>
           <button className={`buttonMain center ${styles.githubLink}`}>
-            <a target="_blank" href="https://github.com/tnmyk/learn-blockchain">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/tnmyk/learn-blockchain"
+            >
               View Sourcecode On Github
             </a>
             <AiFillGithub className={styles.githubIcon} />
@@ -125,13 +129,25 @@ const Home = () => {
             Support the Project by:
           </span>
           <div className={styles.contributeContainer}>
-            <a target="_blank" href="https://github.com/tnmyk/learn-blockchain">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/tnmyk/learn-blockchain"
+            >
               <div className={styles.contribute}>Contribute with Code</div>
             </a>
-            <a target="_blank" href="https://github.com/tnmyk/learn-blockchain">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/tnmyk/learn-blockchain"
+            >
               <div className={styles.contribute}>Contribute with Resources</div>
             </a>
-            <a target="_blank" href="https://github.com/tnmyk/learn-blockchain">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/tnmyk/learn-blockchain"
+            >
               <div className={styles.contribute}>
                 Star the project on Github
               </div>
