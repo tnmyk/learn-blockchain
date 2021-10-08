@@ -9,16 +9,15 @@ const Nav = () => {
         <a className={styles.logo}> Learn Blockchain </a>
       </Link>
       <div className={styles.linksContainer}>
+        <a target="_blank" href="/api/blockchain">
+          Blockchain Api
+        </a>
         <Link href="/demo">
-          <a> Play now </a>
+          <a> Local Demonstration </a>
         </Link>
-        {!isLoggedIn ? (
+        {!isLoggedIn && (
           <Link href="/signin">
-            <button className="buttonMain"> Sign Up </button>
-          </Link>
-        ) : (
-          <Link href="/blockchain">
-            <button className="buttonMain"> Online Blockchain </button>
+            <button className="buttonMain"> Sign In </button>
           </Link>
         )}
       </div>
