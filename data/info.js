@@ -1,19 +1,39 @@
 const infoArr = [
   {
     title: "Learn About Blockchain using this demo",
-    explaination: "heheheheheheheh",
+    explaination: (
+      <>
+        You can here add blocks to the blockchain and click on random components
+        to see the concept behind them. <br />
+        <br />
+        Example: Click on 'Genesis Block' text on the first block and you will
+        learn the meaning behind it.
+      </>
+    ),
   },
   {
     title: "Block",
     explaination:
-      "Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain Blockchain ",
+      "Blocks in Blockchain are connected with Previous Hashes value which is the hash value of the previous block. ",
   },
-  { title: "Genesis Block", explaination: "Metamorphosis!" },
-  { title: "Block Data", explaination: "Block Data" },
+  {
+    title: "Genesis Block",
+    explaination:
+      "The Genesis Block, also known as Block 0, is the very first block upon which additional blocks in a blockchain are added. It is effectively the ancestor that every other block can trace its lineage back to since every block references the one preceding it.",
+  },
+  {
+    title: "Block Data",
+    explaination:
+      "The Block Data can contain any type of data. For example random numbers, transactions, names, etc. This data also is used in calculating the hash for the block and when once the block is added to the blockchain and its data is malipulated, it will turn the whole chain invalid.",
+  },
   { title: "Block Timestamp", explaination: "Block Timestamp" },
   { title: "Previous Hash", explaination: "Previous Hash" },
-  { title: "Hash", explaination: "Hash" },
-  { title: "Genesis Block", explaination: "Metamorphosis!" },
+  {
+    title: "Hash",
+    explaination: `The hashes are also generated with
+            SHA256 encryption standard with difficulty 2. Any manipulation with
+            data inside a block makes the chain invalid. The hash is decided by the data, timestamp, previous hash.`,
+  },
 ];
 
 export default infoArr;
