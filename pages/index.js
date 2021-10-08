@@ -25,9 +25,11 @@ const Home = () => {
               <Link href="/demo">
                 <button className="buttonMain">Play Demonstration</button>
               </Link>
-              <a target="_blank" rel="noreferrer" href="/api/blockchain">
-                <button className="buttonMain">See Blockchain API </button>
-              </a>
+              <Link href="/api/blockchain">
+                <a target="_blank">
+                  <button className="buttonMain">See Blockchain API</button>
+                </a>
+              </Link>
             </div>
           </div>
           <div className={styles.introImageContainer}>
@@ -52,9 +54,11 @@ const Home = () => {
                 Blockchain API of users connected with hashes made by SHA256
                 encryption Standard with difficulty 2.
               </h2>
-              <a target="_blank" rel="noreferrer" href="/api/blockchain">
-                <button className="buttonMain">See blockchain API</button>
-              </a>
+              <Link href="/api/blockchain">
+                <a target="_blank" rel="noreferrer">
+                  <button className="buttonMain">See blockchain API</button>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -112,13 +116,11 @@ const Home = () => {
             This project is Open-sourced and warmly welcomes contribution.
           </p>
           <button className={`buttonMain center ${styles.githubLink}`}>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/tnmyk/learn-blockchain"
-            >
-              View Sourcecode On Github
-            </a>
+            <Link href="https://github.com/tnmyk/learn-blockchain">
+              <a target="_blank" rel="noreferrer">
+                View Sourcecode On Github
+              </a>
+            </Link>
             <AiFillGithub className={styles.githubIcon} />
           </button>
           <br />
@@ -129,29 +131,25 @@ const Home = () => {
             Support the Project by:
           </span>
           <div className={styles.contributeContainer}>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/tnmyk/learn-blockchain"
-            >
-              <div className={styles.contribute}>Contribute with Code</div>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/tnmyk/learn-blockchain"
-            >
-              <div className={styles.contribute}>Contribute with Resources</div>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/tnmyk/learn-blockchain"
-            >
-              <div className={styles.contribute}>
-                Star the project on Github
-              </div>
-            </a>
+            <Link href="https://github.com/tnmyk/learn-blockchain">
+              <a target="_blank" rel="noreferrer">
+                <div className={styles.contribute}>Contribute with Code</div>
+              </a>
+            </Link>
+            <Link href="https://github.com/tnmyk/learn-blockchain">
+              <a target="_blank" rel="noreferrer">
+                <div className={styles.contribute}>
+                  Contribute with Resources
+                </div>
+              </a>
+            </Link>
+            <Link href="https://github.com/tnmyk/learn-blockchain">
+              <a target="_blank" rel="noreferrer">
+                <div className={styles.contribute}>
+                  Star the project on Github
+                </div>
+              </a>
+            </Link>
           </div>
         </div>
         <div className={styles.page} style={{ minHeight: "75vh" }}>
