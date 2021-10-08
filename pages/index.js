@@ -19,14 +19,13 @@ const Home = () => {
               With Live Demonstration
             </h1>
             <p className={styles.introSubHeading}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Learn blockchain and visualize it.
             </p>
             <div className={styles.introBtns}>
               <Link href="/demo">
                 <button className="buttonMain">Play Demonstration</button>
               </Link>
-              <a target="_blank" href="/api/blockchain">
+              <a  href="/api/blockchain">
                 <button className="buttonMain">See Blockchain API </button>
               </a>
             </div>
