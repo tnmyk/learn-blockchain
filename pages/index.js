@@ -33,12 +33,12 @@ const Home = () => {
         </div>
         <div className={styles.learnMore}>Learn More</div>
         <div className={styles.page}>
-          <h1 className={styles.heading}>Live Demo</h1>
+          <h1 className={styles.heading}>Live Blockchain API</h1>
           <p className={styles.sub}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
-            consectetur adipiscing elit duis tristique sollicitudin nibh sit.
-            Morbi tristique senectus et netus et malesuada fames ac turpis.
+            Blockchain API deployed to demonstrate storing of data. The API
+            stores the users in blocks. A block is added on every new user
+            sign-up. All the users who have registered till date can be seen.
+            The API is updated dynamically.
           </p>
           <div className={styles.previewFlex}>
             <div className={styles.previewImageContainer}>
@@ -46,22 +46,22 @@ const Home = () => {
             </div>
             <div className={styles.previewTextContainer}>
               <h2 className={styles.previewText}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit
-                amet consectetur adipiscing elit duis tristique sollicitudin
-                nibh sit.
+                Blockchain API of users connected with hashes made by SHA256
+                encryption Standard with difficulty 2.
               </h2>
               <button className="buttonMain">Start Live Demo</button>
             </div>
           </div>
         </div>
         <div className={styles.page}>
-          <h1 className={styles.heading}>Learn Step by Step</h1>
+          <h1 className={styles.heading}>
+            Learn through Local Blockchain demo
+          </h1>
           <p className={styles.sub}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
-            consectetur adipiscing elit duis tristique sollicitudin nibh sit.
-            Morbi tristique senectus et netus et malesuada fames ac turpis.
+            User can add new blocks and visualize how hashes are connect with
+            previous Hashes of next block. The hashes are also generated with
+            SHA256 encryption standard with difficulty 2. Any manipulation with
+            data inside a block makes the chain invalid.
           </p>
           <div className={styles.previewFlex}>
             <div className={styles.previewImageContainer}>
@@ -69,10 +69,10 @@ const Home = () => {
             </div>
             <div className={styles.previewTextContainer}>
               <h2 className={styles.previewText}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit
-                amet consectetur adipiscing elit duis tristique sollicitudin
-                nibh sit.
+                Concept for any element of blockchain can be seen just by
+                clicking the desired element. <br />
+                The information will be automatically rendered on the left
+                section of the demo page.
               </h2>
               <button className="buttonMain">Start Learning</button>
             </div>
@@ -83,8 +83,7 @@ const Home = () => {
             Features
           </h1>
           <p className={`${styles.sub} ${styles.subCenter}`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Features of the Web App
           </p>
           <div className={styles.cardsContainer}>
             {featuresData.map((feature, index) => {
@@ -103,11 +102,12 @@ const Home = () => {
             Open-Sourced
           </h1>
           <p className={`${styles.sub} ${styles.subCenter}`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            This project is Open-sourced and warmly welcomes contribution.
           </p>
           <button className={`buttonMain center ${styles.githubLink}`}>
-            <Link href="/">View Sourcecode On Github</Link>
+            <a target="_blank" href="https://github.com/tnmyk/learn-blockchain">
+              View Sourcecode On Github
+            </a>
             <AiFillGithub className={styles.githubIcon} />
           </button>
           <br />
@@ -118,17 +118,17 @@ const Home = () => {
             Support the Project by:
           </span>
           <div className={styles.contributeContainer}>
-            <Link href="/">
+            <a target="_blank" href="https://github.com/tnmyk/learn-blockchain">
               <div className={styles.contribute}>Contribute with Code</div>
-            </Link>
-            <Link href="/">
+            </a>
+            <a target="_blank" href="https://github.com/tnmyk/learn-blockchain">
               <div className={styles.contribute}>Contribute with Resources</div>
-            </Link>
-            <Link href="/">
+            </a>
+            <a target="_blank" href="https://github.com/tnmyk/learn-blockchain">
               <div className={styles.contribute}>
                 Star the project on Github
               </div>
-            </Link>
+            </a>
           </div>
         </div>
         <div className={styles.page}>
@@ -140,16 +140,13 @@ const Home = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <div className="center">
-            <Link href="/">
+            {/* <Link href="/">
               <div className={styles.moreDetailsBtn}>Resources</div>
-            </Link>
+            </Link> */}
             <Link href="/">
               <div className={styles.moreDetailsBtn}>Techstack Used</div>
             </Link>
-            <Link href="/">
-              <div className={styles.moreDetailsBtn}>Techstack Used</div>
-            </Link>
-            <Link href="/">
+            <Link href="/about">
               <div className={styles.moreDetailsBtn}>More about Project</div>
             </Link>
           </div>

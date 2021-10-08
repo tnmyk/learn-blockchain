@@ -1,23 +1,19 @@
 const featuresData = [
   {
-    title: "Learn",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    title: "Learn with demo",
+    description: `Click on components in the demo and know the concepts behind it`,
   },
   {
-    title: "Learn",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    title: "Live blockchain API",
+    description: `Users can see the blockchain API storing the registered users`,
   },
   {
-    title: "Learn",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    title: "Sawo API",
+    description: `Sawo labs API is used to sign up and sign in.`,
   },
   {
-    title: "Learn",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    title: "Open Sourced",
+    description: `People can see the code and concepts and can contribute freely.`,
   },
 ];
 

@@ -7,14 +7,15 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.logo}>Blockchain</div>
       <div className={styles.linksContainer}>
-        <Link href="/">
+        <Link href="/about">
           <a>About Project</a>
         </Link>
-        <Link href="/">
-          <a>
-            Github <AiFillGithub style={{verticalAlign:'-2px',fontSize:'1.1rem'}} />
-          </a>
-        </Link>
+
+        <a href="https://github.com/tnmyk/learn-blockchain" target="_blank">
+          Github
+          <AiFillGithub style={{ verticalAlign: "-2px", fontSize: "1.1rem" }} />
+        </a>
+
         <Link href="/">
           <a>Resources</a>
         </Link>
