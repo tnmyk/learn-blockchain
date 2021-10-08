@@ -7,6 +7,7 @@ import { useAuth } from "../context/AuthContext";
 import Link from "next/link";
 const Signin = () => {
   const { isLoggedIn, signIn } = useAuth();
+  const show = isLoggedIn;
   const sawoConfig = {
     onSuccess: sawoLoginCallback, //required
     identifierType: "phone_number_sms", //required, must be one of: 'email', 'phone_number_sms',
@@ -14,16 +15,16 @@ const Signin = () => {
     containerHeight: "100%", // the login container height, default is 230px
   };
   function sawoLoginCallback(payload) {
+    console.log(payload);
     signIn(payload);
   }
   return (
     <>
       <div className={styles.page}>
-        {!isLoggedIn ? (
-          <div className={styles.formContainer}>
-            <SawoLogin config={sawoConfig} />
-          </div>
-        ) : (
+        {!show && <div className={styles.formContainer}>
+          <SawoLogin config={sawoConfig} />
+        </div>}
+        {isLoggedIn && (
           <>
             <h2 className={styles.loggedIn}>You are now Signed In</h2>
             <Link href="/demo">
