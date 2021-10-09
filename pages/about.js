@@ -30,7 +30,8 @@ const About = () => {
       </Head>
       <h1 className="center">About the project</h1>
       <div className={styles.body}>
-        This project was made by me within 4 days for 'Quaranteam' hackathon.
+        This project was made by me within 4 days for &apos;Quaranteam&apos;
+        hackathon.
         <br /> <br />
         <h3>Objective</h3>
         <br />
@@ -39,8 +40,12 @@ const About = () => {
         <br /> <br />
         <h3>Techstack used in this project</h3>
         <div className={styles.techstackContainer}>
-          {techstack.map((tech,index) => {
-            return <div key={index} className={styles.techstack}>{tech}</div>;
+          {techstack.map((tech, index) => {
+            return (
+              <div key={index} className={styles.techstack}>
+                {tech}
+              </div>
+            );
           })}
           <div className={styles.techstack} style={{ background: "black" }}>
             <img src="images/sawo.png" height="70%" />
