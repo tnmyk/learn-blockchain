@@ -3,8 +3,12 @@ const infoArr = [
     title: "Learn About Blockchain using this demo",
     explaination: (
       <>
-        You can here add blocks to the blockchain and click on random components
-        to see the concept behind them. <br />
+        You can here add blocks to the blockchain by entering any text in the
+        "Add a new block to your blockchain" container on the right section and
+        then clicking &apos;Add Block&apos;
+        <br />
+        <br />
+        Click on random components to see the concept behind them.
         <br />
         Example: Click on 'Genesis Block' text on the first block and you will
         learn the meaning behind it.
@@ -18,13 +22,35 @@ const infoArr = [
   },
   {
     title: "Genesis Block",
-    explaination:
-      "The Genesis Block, also known as Block 0, is the very first block upon which additional blocks in a blockchain are added. It is effectively the ancestor that every other block can trace its lineage back to since every block references the one preceding it.",
+    explaination: (
+      <>
+        The Genesis Block, also known as Block 0, is the very first block upon
+        which additional blocks in a blockchain are added. It is effectively the
+        ancestor that every other block can trace its lineage back to since
+        every block references the one preceding it.
+        <br />
+        <br />
+        The previous hash value for Genesis block is 0 as no block is behind it.
+      </>
+    ),
   },
   {
     title: "Block Data",
-    explaination:
-      "The Block Data can contain any type of data. For example random numbers, transactions, names, etc. This data also is used in calculating the hash for the block and when once the block is added to the blockchain and its data is malipulated, it will turn the whole chain invalid.",
+    explaination: (
+      <>
+        Every block in a blockchain store some data inside it other than
+        properties like Previous Hash,Hash ,etc. This data can be of any type.
+        For example random numbers, text, transactions, names, etc. In
+        cryptocurrencies, the data stored in every block is the transactions and
+        its details.
+        <br />
+        <br /> This data also is used in calculating the hash for the block and
+        when once the block is added to the blockchain the data cannot be
+        manipulated. If someone tries to change that data in any block of the
+        blockchain, it will turn the whole chain invalid as the hash of the
+        block will change.
+      </>
+    ),
   },
   { title: "Block Timestamp", explaination: "Block Timestamp" },
   { title: "Previous Hash", explaination: "Previous Hash" },
