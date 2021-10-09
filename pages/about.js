@@ -23,6 +23,9 @@ const techstack = [
 const About = () => {
   return (
     <div className={styles.container}>
+      <Head>
+          <title>About the project</title>
+      </Head>
       <h1 className="center">About the project</h1>
       <p className={styles.body}>
         This project was made by me within 4 days for 'Quaranteam' hackathon.
