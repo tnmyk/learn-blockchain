@@ -9,6 +9,14 @@
     padding: 0 3rem;
     padding-top: 3rem;
 }   
+
+.logo{
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.6rem;
+}
 .linksContainer{
     margin-top: 1rem;
     width: 20%;

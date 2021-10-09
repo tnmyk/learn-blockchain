@@ -5,7 +5,10 @@ import { AiFillGithub } from "react-icons/ai";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.logo}>Blockchain</div>
+      <div className={styles.logo}>
+        <img src="images/logo.svg" height="50px" />
+        <h3>Learn Blockchain</h3>
+      </div>
       <div className={styles.linksContainer}>
         <Link href="/about">
           <a>About Project</a>
