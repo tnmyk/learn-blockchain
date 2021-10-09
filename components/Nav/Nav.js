@@ -6,7 +6,9 @@ const Nav = () => {
   return (
     <div className={styles.container}>
       <Link href="/">
-        <a className={styles.logo}> Learn Blockchain </a>
+        <a className={styles.logo}>
+          <img src='images/logo.svg' height="30px"/>
+           Learn Blockchain </a>
       </Link>
       <div className={styles.linksContainer}>
         <Link href="/api/blockchain">
