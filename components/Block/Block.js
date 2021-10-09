@@ -24,17 +24,22 @@ const Block = ({
     setHash(mineBlock(value, new Date().getTime(), previousHash));
   };
   return (
-    <div className={styles.block} data-topic="Block">
+    <div className={` ${styles.block}`} data-topic="Block">
       <p className={`center ${styles.blockNumber}`}>
         {index ? (
           `Block #${index}`
         ) : (
-          <span data-topic="Genesis Block">Genesis Block</span>
+          <span className="clickable" data-topic="Genesis Block">
+            Genesis Block
+          </span>
         )}
       </p>
       <div className={styles.infoContainer}>
         <div className={styles.info}>
-          <span data-topic="Block Data"> Data:</span>
+          <span data-topic="Block Data" className="clickable">
+            {" "}
+            Data:
+          </span>
           <input
             type="text"
             defaultValue={data}
@@ -43,16 +48,18 @@ const Block = ({
           />
         </div>
         <div>
-          <div data-topic="Block Timestamp"> Timestamp: {timestamp}</div>
+          <div data-topic="Block Timestamp" className="clickable">
+            Timestamp: {timestamp}
+          </div>
         </div>
         <div>
-          <div data-topic="Previous Hash">
+          <div data-topic="Previous Hash" className="clickable">
             Previous Hash:
             <span style={wrong ? wrongStyle : {}}> {previousHash} </span>
           </div>
         </div>
       </div>
-      <div className={styles.hashContainer} data-topic="Hash">
+      <div className={`clickable ${styles.hashContainer}`} data-topic="Hash">
         Hash: {hash}
       </div>
     </div>

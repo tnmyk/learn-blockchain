@@ -34,11 +34,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
-button{
+button {
   border: none;
   cursor: pointer;
 }
-.buttonMain{
+.buttonMain {
   background-color: var(--btn-bg-color);
   color: var(--btn-text-color);
   border-radius: 30px;
@@ -49,4 +49,8 @@ button{
   display: block;
   width: max-content;
   margin: 0 auto;
+}
+
+.clickable {
+  cursor: pointer;
 }
