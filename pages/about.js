@@ -5,6 +5,8 @@ import {
   SiFirebase,
   SiLetsencrypt,
 } from "react-icons/si";
+
+import Head from 'next/head'
 const techstack = [
   <>
     Next.js <SiNextdotjs />
@@ -24,10 +26,10 @@ const About = () => {
   return (
     <div className={styles.container}>
       <Head>
-          <title>About the project</title>
+        <title>About the project</title>
       </Head>
       <h1 className="center">About the project</h1>
-      <p className={styles.body}>
+      <div className={styles.body}>
         This project was made by me within 4 days for 'Quaranteam' hackathon.
         <br /> <br />
         <h3>Objective</h3>
@@ -37,14 +39,14 @@ const About = () => {
         <br /> <br />
         <h3>Techstack used in this project</h3>
         <div className={styles.techstackContainer}>
-          {techstack.map((tech) => {
-            return <div className={styles.techstack}>{tech}</div>;
+          {techstack.map((tech,index) => {
+            return <div key={index} className={styles.techstack}>{tech}</div>;
           })}
           <div className={styles.techstack} style={{ background: "black" }}>
             <img src="images/sawo.png" height="70%" />
           </div>
         </div>
-      </p>
+      </div>
     </div>
   );
 };
