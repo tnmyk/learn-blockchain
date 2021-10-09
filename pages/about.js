@@ -27,7 +27,12 @@ const About = () => {
       <p className={styles.body}>
         This project was made by me within 4 days for 'Quaranteam' hackathon.
         <br /> <br />
-        <h3>Techstack used in this project:</h3>
+        <h3>Objective</h3>
+        <br />
+        Beginners can learn how blockchain works and learn some technical terms
+        behind it.
+        <br /> <br />
+        <h3>Techstack used in this project</h3>
         <div className={styles.techstackContainer}>
           {techstack.map((tech) => {
             return <div className={styles.techstack}>{tech}</div>;

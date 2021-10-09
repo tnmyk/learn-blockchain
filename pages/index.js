@@ -163,7 +163,7 @@ const Home = () => {
             {/* <Link href="/">
               <div className={styles.moreDetailsBtn}>Resources</div>
             </Link> */}
-            <Link href="/">
+            <Link href="/about">
               <div className={styles.moreDetailsBtn}>Techstack Used</div>
             </Link>
             <Link href="/about">
